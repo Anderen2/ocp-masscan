@@ -11,4 +11,4 @@ RUN yum install -y epel-release && \
     yum install -y --setopt=tsflags=nodocs masscan && \
     yum clean all
 
-CMD ["/bin/bash"]
+CMD ["/usr/bin/python"]
