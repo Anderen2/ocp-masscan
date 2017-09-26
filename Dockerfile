@@ -12,4 +12,4 @@ RUN yum install -y epel-release && \
     yum install -y iproute && \
     yum clean all
 
-CMD ["sleep", "9999999"]
+CMD ["tail", "-f", "/dev/null"]
