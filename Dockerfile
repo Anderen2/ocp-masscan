@@ -11,7 +11,8 @@ RUN yum install -y epel-release && \
     yum install -y --setopt=tsflags=nodocs masscan && \
     yum install -y iproute && \
     yum install -y tcpdump && \ 
-    yum install -y netcat && \
+    yum install -y nmap-ncat && \
+    yum install -y socat && \
     yum clean all
 
 CMD ["tail", "-f", "/dev/null"]
