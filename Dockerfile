@@ -10,6 +10,8 @@ LABEL io.k8s.description="Fast internet port scanner" \
 RUN yum install -y epel-release && \
     yum install -y --setopt=tsflags=nodocs masscan && \
     yum install -y iproute && \
+    yum install -y tcpdump && \ 
+    yum install -y netcat && \
     yum clean all
 
 CMD ["tail", "-f", "/dev/null"]
